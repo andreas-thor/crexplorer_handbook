@@ -5,6 +5,12 @@ site_name: ELearning
 site_dir: 'public/'
 docs_dir: 'docs'
 
+nav: 
+  - "Introduction": introduction.md
+  - "Run & Download": run_download.md
+ 
+
+
 theme: 
   name: material  
   features:
