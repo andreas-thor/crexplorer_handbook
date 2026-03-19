@@ -1,4 +1,5 @@
 site_name: Cited References Explorer
+site_url: https://andreas-thor.github.io/crexplorer_handbook
 nav:
   - "Introduction": index.md
   - "Run & Download": run_download.md
