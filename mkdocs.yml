@@ -1,4 +1,20 @@
 site_name: My site
 site_url: https://mydomain.org/mysite
-theme:
+
+site_name: ELearning
+site_dir: 'public/'
+docs_dir: 'docs'
+
+theme: 
   name: material  
+  features:
+    - navigation.tabs
+    - content.tabs.link
+    - navigation.indexes
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
