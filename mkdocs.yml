@@ -3,23 +3,22 @@ site_url: https://andreas-thor.github.io/crexplorer_handbook/
 
 
 nav: 
-  - "Introduction": 
-    - introduction.md
-  - "Run & Download": 
-    - run_download.md
+  - "Home": index.md
+  - "Introduction": introduction.md
+  - "Run & Download": run_download.md
  
 
 
 theme: 
   name: material  
-  features:
-    - navigation.tabs
-    - content.tabs.link
-    - navigation.indexes
+#   features:
+#     - navigation.tabs
+#     - content.tabs.link
+#     - navigation.indexes
 
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+# markdown_extensions:
+#   - admonition
+#   - pymdownx.details
+#   - pymdownx.superfences
+#   - pymdownx.tabbed:
+#       alternate_style: true
