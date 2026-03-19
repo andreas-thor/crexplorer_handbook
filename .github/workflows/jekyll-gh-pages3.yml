@@ -1,26 +1,36 @@
-name: Deploy docs to GitHub Pages
+# .github/workflows/docs.yml
+name: Deploy Documentation
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
         with:
-          python-version: '3.x'
+          fetch-depth: 0  # Full history for git-revision-date plugin
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install mkdocs-material
-          pip install mkdocs-exporter
-          playwright install
-      - name: Deploy to GitHub Pages
-        run: |
-          mkdocs gh-deploy --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # COPY this exactly as is      
+          pip install mkdocs mkdocs-material \
+            mkdocs-exporter \
+            mkdocs-minify-plugin \
+            mkdocs-git-revision-date-localized-plugin \
+            pymdown-extensions
+
+      - name: Playwright
+        run: playwright install
+
+      - name: Deploy docs
+        run: mkdocs gh-deploy --force
