@@ -6,8 +6,10 @@ site_dir: 'public/'
 docs_dir: 'docs'
 
 nav: 
-  - "Introduction": introduction.md
-  - "Run & Download": run_download.md
+  - "Introduction": 
+    - introduction.md
+  - "Run & Download": 
+    - run_download.md
  
 
 
