@@ -43,7 +43,7 @@ jobs:
             mkdocs-material-
       - run: pip install --upgrade pip && pip install mkdocs mkdocs-gen-files && pip install mkdocs-material && pip install mkdocs-exporter
       - run: playwright install  
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build
 
   # Deployment job
   deploy:
