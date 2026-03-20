@@ -1,3 +1,8 @@
+---
+pdf: false
+---
+
+
 # Guide and Datasets
 
 1. [CitedReferencesExplorer (CRExplorer) Manual](manual.pdf)

@@ -1,3 +1,8 @@
+---
+pdf: false
+---
+
+
 # Papers 
 
 * [Detecting the historical roots of research fields by reference publication year spectroscopy (RPYS)](http://dx.doi.org/10.1002/asi.23089) <br />by Werner Marx, Lutz Bornmann, Andreas Barth, and Loet Leydesdorff ([arXiv](http://arxiv.org/abs/1307.8239))

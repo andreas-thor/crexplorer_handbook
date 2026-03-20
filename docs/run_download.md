@@ -1,3 +1,8 @@
+---
+pdf: false
+---
+
+
 # Running CRExplorer & System Requirements
 
 CRExplorer is packaged as a Java Archive (JAR) and requires a system with Java 17 (or higher) support.

@@ -5,6 +5,13 @@ nav:
   - "Run & Download": run_download.md
   - "WoS Landmark Papers": https://andreas-thor.github.io/CRExplorer/landmark.html
   - "Guide & Datasets": guide_datasets.md
+  - "Manual": 
+    - "Table of Contents": manual/toc.md
+    - "Introduction": manual/intro.md
+    - "Example: Greenhouse Effect": manual/example.md
+    - "User Interface": manual/user_interface.md
+    - "Options Panel": manual/options.md
+    - "References": manual/references.md
   - "Papers": papers.md
   - "Authors & Contributors": authors_contributors.md
   - "Legal Notice": legal_notice.md
@@ -20,6 +27,9 @@ theme:
   palette:
       primary: black  
 
+
+markdown_extensions:
+  - pymdownx.blocks.caption
 
 
 extra:
@@ -39,6 +49,7 @@ plugins:
       formats:
         pdf:
           enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
+          explicit: false
           concurrency: 8
           # stylesheets:
           #   - resources/stylesheets/pdf.scss
@@ -50,8 +61,8 @@ plugins:
             output: site.pdf
             covers: all
 
-      buttons:
-        - title: Download as PDF
-          icon: material-file-download-outline
-          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
-          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes        
+      # buttons:
+      #   - title: Download as PDF
+      #     icon: material-file-download-outline
+      #     enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+      #     attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes        

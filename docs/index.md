@@ -1,3 +1,7 @@
+---
+pdf: false
+---
+
 # Introduction
 
 Which are the most important papers in the history of a field? On whose shoulders of giants does an author stand? Where to look for the intellectual roots of a research topic? These questions can be answered by using the program CitedReferencesExplorer (CRExplorer).
