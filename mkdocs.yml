@@ -4,15 +4,35 @@ nav:
   - "Introduction": index.md
   - "Run & Download": run_download.md
   - "WoS Landmark Papers": https://andreas-thor.github.io/CRExplorer/landmark.html
+  - "Guide & Datasets": guide_datasets.md
+  - "Papers": papers.md
+  - "Authors & Contributors": authors_contributors.md
+  - "Legal Notice": legal_notice.md
 
 theme: 
   name: material  
+
+  custom_dir: overrides  
   features:
     - toc.integrate
   logo: CRLogo_white.png
   favicon: favicon.ico
   palette:
       primary: black  
+
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/andreas-thor/CRExplorer          
+    - icon: custom/htwk
+      link: https://www.htwk-leipzig.de/en/htwk-leipzig/     
+    - icon: custom/mpg
+      link: http://www.mpg.de/en   
+
+
+
 
 plugins:
   - exporter: 

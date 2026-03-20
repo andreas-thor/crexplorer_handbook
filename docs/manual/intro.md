@@ -1,0 +1,17 @@
+# Introduction 
+
+The program CitedReferencesExplorer (CRExplorer) can be used to analyse the cited references (CRs) data in a publication set retrieved from Web of Science (WoS, Clarivate) or other data sources. The program produces empirical results in a graphical or table format that can be included in papers or presentations (Thor, Marx, Leydesdorff, & Bornmann, 2016a, 2016b). The program can be retrieved from www.crexplorer.net. It is written in the Java programming language and, thus, runs on most hardware and operating system platforms. A Java variant with JavaFX (e.g., Oracle Java) is needed. The minimum required Java version is 17. The program can be used free of charge. An executable JAR file and this manual (and possible newer versions) can be downloaded from www.crexplorer.net.
+
+
+The program can be started from the command line. The user should go to the folder where the downloaded file crexplorer.jar is located and run:
+
+```java -jar crexplorer.jar```
+
+
+The program was primarily developed to identify those publications in fields, of topics, or by researchers which have been most frequently referenced. It is especially suitable to study the historical roots of fields, topics, or researchers by Reference Publication Year Spectroscopy (RPYS, e.g., Barth, Marx, Bornmann, & Mutz, 2014; Marx, Bornmann, Barth, & Leydesdorff, 2014). RPYS was introduced by Marx et al. (2014) and “is based on the analysis of the frequency with which references are cited in the publications of a specific research field in terms of the publication years of these CRs. The origins show up in the form of more or less pronounced peaks mostly caused by individual publications that are cited particularly frequently” (p. 751). Many RPYS studies using CRExplorer have been published in recent years: a search with “’Reference Publication Year Spectroscopy’ (All fields)” in the WoS found more than 70 papers published in many different subject areas (date of search: October, 2024).
+
+
+As support for collecting the complete set of publications on a topic or on a specific field, the user can inspect the documents which are listed by members of groups in Mendeley (see www.mendeley.com). For example, there exists an altmetrics group listing most of the publications on this topic. CRExplorer reads, analyses, and edits the CRs of the colleted publications which are previously retrieved from WoS, Scopus, or some other sources. In order to analyse the CRs, the user can consult (1) a graph for identifying most frequently cited reference publication years (RPYs) and (2) a table of CRs which account for specific RPYs. Field-normalization in impact measurement is ensured by the first step of the analysis of CRs: the selection of the publication set on which citation impact is measured.
+
+
+CRExplorer includes a disambiguation feature which clusters and merges variants of the same CR. This means that the program can also be used as a tool for preparing CR data for other programs, e.g., VOSviewer (van Eck & Waltman, 2010), metaknowledge (McLevey & McIlroy-Young, 2017), or RPYS i/o (Comins & Leydesdorff, 2016). For this purpose, the data are exported in WoS or Scopus format and imported in other programs for further processing. Furthermore, the data can be transferred from one format into another: Imports from Scopus can be exported as WoS files and imports from WoS can be exported as Scopus files (Thor et al., 2016b).
