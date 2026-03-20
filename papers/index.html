@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://andreas-thor.github.io/crexplorer_handbook/run_download/" rel="canonical"/>
-<link href=".." rel="prev"/>
-<link href="../guide_datasets/" rel="next"/>
+<link href="https://andreas-thor.github.io/crexplorer_handbook/papers/" rel="canonical"/>
+<link href="../manual/references/" rel="prev"/>
+<link href="../authors_contributors/" rel="next"/>
 <link href="../favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
-<title>Run &amp; Download - Cited References Explorer</title>
+<title>Papers - Cited References Explorer</title>
 <link href="../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -21,7 +21,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#running-crexplorer-system-requirements">
+<a class="md-skip" href="#papers">
           Skip to content
         </a>
 </div>
@@ -45,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Run &amp; Download
+              Papers
             
           </span>
 </div>
@@ -79,46 +79,17 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    
-  
-    Run &amp; Download
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-<span class="md-ellipsis">
-    
-  
-    Run &amp; Download
-  
-
-    
-  </span>
-</a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#releases">
+<a class="md-nav__link" href="../run_download/">
 <span class="md-ellipsis">
-      
-        Releases
-      
-    </span>
+    
+  
+    Run &amp; Download
+  
+
+    
+  </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="https://andreas-thor.github.io/CRExplorer/landmark.html">
@@ -242,8 +213,9 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../papers/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
   
@@ -285,54 +257,53 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="running-crexplorer-system-requirements">Running CRExplorer &amp; System Requirements</h1>
-<p>CRExplorer is packaged as a Java Archive (JAR) and requires a system with Java 17 (or higher) support.</p>
-<p>On most systems a double click on the runnable JAR file will start CRExplorer. If you want to run the JAR file from command line please refer to the official Java documentation on <a href="https://docs.oracle.com/javase/tutorial/deployment/jar/run.html">Running JAR-Packaged Software</a>. Here you can also set the heap space size if you are processing large files.</p>
-<p>If you want to employ CRExplorer's script language, you run your script with the following command line:</p>
-<pre><code class="language-bash">java -cp crexplorer.jar cre.Script myscript.crs
-</code></pre>
-<p>where <code>myscript.crs</code> should be replaced by the user's script filename.</p>
-<h2 id="releases">Releases</h2>
-<p>CRExplorer version 1.9 was released on July 16, 2018. This version includes the following new features and improvements:</p>
+<h1 id="papers">Papers</h1>
 <ul>
-<li><strong>CrossRef</strong>: CRExplorer opens one or several datasets from <a href="https://www.crossref.org/">CrossRef</a>. In addition, cited references data can be directly imported into the CRExplorer by using the search interface for CrossRef data.</li>
-<li><strong>Drawing several samples</strong>: Since the introduction of the reference publication year spectroscopy (RPYS) method and the corresponding program CRExplorer, many studies have been published revealing the historical roots of topics, fields, and researchers. The application of the method was restricted up to now by the available memory of the computer used for running the CRExplorer. Thus, many users could not perform RPYS for broader research fields or topics. Now, the script language of the CRExplorer can be used to draw many samples from the full population dataset. First empirical explorations (see <a href="https://arxiv.org/abs/1807.04673">The introduction of RPYS sampling using the example of climate change research</a>) have shown, that the RPYS based on many samples can lead to very similar results as the results based on the full population dataset.</li>
-</ul>
-<p>CRExplorer version 1.8.2 was released on February 1, 2018. This version includes the following new features and improvements:</p>
-<ul>
-<li><strong>Sequence</strong>: To reveal impact sequences over time for cited references, cited references are classified as on average ("0"), above average ("+"), and below average ("-") citation impact in citing years. The benchmark is the mean citation impact of all other cited references published in the same year. For example, the sequence [---+++000] means that the cited reference has been cited below average in the first three citing years, above average in the next three years, and on average in the last three citing years.</li>
-<li><strong>Types of sequences</strong>: The sequences are used to identify specific types in terms of the symbols ("+", "-", "0"). The types are labelled as follows: sleeping beauty with low or no citation impact over a longer initial period and high citation impact later; constant performer with a constant and considerable amount of citation impact over time; hot paper with high citation impact directly after the publication and low citation impact later; life cycle with very different citation impact across the citing years.</li>
-<li><strong>Samples</strong>: In many cases, the full dataset from Web of Science or Scopus (the population) cannot be completely imported in the program because the available memory on the computer is restricted. Thus, the user has the new option to reduce the dataset by loading only a sample from the population. Three samples can be drawn from the population: random, systematic, or cluster sample.</li>
-<li><strong>Script language</strong>: CRExplorer provides a tailored script language that allows the application of the most important functions. This can be useful for recurring experiments using different data sets or for processing large volumes of data. Users can execute scripts from the command line. The use of the script language is explained in the handbook.</li>
-</ul>
-<p>CRExplorer version 1.7.7 was released on June 30, 2017. This version includes the following new features and improvements:</p>
-<ul>
-<li><strong>Publications</strong>: Users can specify (under "File" - "Settings" - "Import/Export") if CRExplorer should include publications that do not have any cited references.</li>
-<li><strong>Settings</strong>: Several enhancements in the settings incl. chart layout options (font size, stroke size).</li>
-</ul>
-<p>CRExplorer version 1.7.5 was released on May 31, 2017. This version includes the following new features and improvements:</p>
-<ul>
-<li><strong>Citing Publications</strong>: Users can inspect the list of citing publications for selected cited references via "View" - "Citing Publications".</li>
-<li><strong>Searching</strong>: Users can do keyword searches for cited references (including wildcards such as *).</li>
-<li><strong>Indicators</strong>: Three indicators are included which show in how many citing years the cited publication (cited reference) belongs to the 50%, 25%, or 10% most cited publications – compared to all other cited publications (cited references) which have been appeared in the same cited year.</li>
-<li><strong>CSV output formats</strong>: CRExplorer offers different CSV-based output formats (graph data, cited references and/or citing publications)</li>
-<li><strong>Copy + Paste</strong>: Users can copy selected cited references to clipboard (Ctrl+C) and paste it in other programs (e.g., Excel).</li>
-<li><strong>New Chart layout</strong>: Beside the standard chart (JFreeChart), CRExplorer now employs a new web-based, interactive chart type (HighCharts). Users can switch between the types in the "File" - "Settings" menu.</li>
-<li><strong>User Interface</strong>: CRExplorer's GUI is now based on JavaFX.</li>
-<li><strong>Handbook</strong>: A handbook is available which explains the elements and functions of the program.</li>
-</ul>
-<p>CRExplorer version 1.6.8 was released on August 29, 2016. This version includes the following new features and improvements:</p>
-<ul>
-<li><strong>Co-Citation</strong>: If the user marks at least one cited reference in the table and selects "Data" – "Retain Publications Citing Selected Cited References", all cited references which are co-cited with the marked cited reference in citing publications are kept (all other cited references are dropped). See <a href="http://arxiv.org/abs/1608.07960">Which early works are cited most frequently in climate change research literature? A bibliometric approach based on Reference Publication Year Spectroscopy</a> for a first use case.</li>
-<li><strong>Performance</strong>: Performance improvements (e.g., for data clustering) using multiple threads on multi-core machines.</li>
-<li><strong>Java 8</strong>: CRExplorer requires a Java 8 run-time.</li>
-</ul>
-<p>CRExplorer version 1.6.7 was released on July 5, 2016. This version includes the following new features and improvements (see <a href="http://arxiv.org/abs/1607.01266">New features of CRExplorer for a detailed description</a>):</p>
-<ul>
-<li><strong>Scopus</strong>: Using "File" – "Import" – "Scopus", CRExplorer reads files from Scopus. The file format "CSV" (including citations, abstracts and references) should be chosen in Scopus for downloading records.</li>
-<li><strong>Export facilities</strong>: Using "File" – "Export" – "Scopus", CRExplorer exports files in the Scopus format. Using "File" – "Export" – "Web of Science", CRExplorer exports files in the Web of Science format. These files can be imported in other bibliometric programs (e.g. VOSviewer).</li>
-<li><strong>Space bar</strong>: Select a specific cited reference in the cited references table, press the space bar, and all bibliographic details of the CR are shown.</li>
-<li><strong>Internal file format</strong>: Using "File" – "Save" working files are saved in the internal file format "*.cre". The files include all data including matching results and manual matching corrections. The files can be opened by using "File" – "Open".</li>
+<li>
+<p><a href="http://dx.doi.org/10.1002/asi.23089">Detecting the historical roots of research fields by reference publication year spectroscopy (RPYS)</a> <br/>by Werner Marx, Lutz Bornmann, Andreas Barth, and Loet Leydesdorff (<a href="http://arxiv.org/abs/1307.8239">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1007/s11192-014-1465-6">Philosophy of science viewed through the lense of "References Publication Years spectrosopy" (RPYS)</a><br/>by K. Brad Wray and Lutz Bornmann (<a href="http://arxiv.org/abs/1410.3461">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1007/s11192-013-1200-8">Tracing the origin of a scientific legend by Reference Publication Year Spectroscopy (RPYS): the legend of the Darwin finches </a><br/>by Werner Marx and Lutz Bornmann (<a href="http://arxiv.org/abs/1311.5665">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1016/j.joi.2013.11.006">Referenced Publication Years Spectroscopy applied to iMetrics: Scientometrics, Journal of Informetrics, and a relevant subset of JASIST </a><br/>by Loet Leydesdorff, Lutz Bornmann, Werner Marx, and Staša Milojevic (<a href="http://arxiv.org/abs/1309.5706">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1080/09737766.2016.1177948">Identifying seminal works most important for research fields: Software for the Reference Publication Year Spectroscopy (RPYS) </a><br/>by Lutz Bornmann, Andreas Thor, Werner Marx, and Loet Leydesdorff (<a href="https://dx.doi.org/10.6084/m9.figshare.1422015">figshare</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1140/epjp/i2014-14111-6">On the origins and the historical roots of the Higgs boson research from a bibliometric perspective </a><br/>by Andreas Barth, Werner Marx, Lutz Bornmann, and Ruediger Mutz (<a href="http://arxiv.org/abs/1402.4223">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1002/asi.23769">Identification of long-term concept-symbols among citations: Can documents be clustered in terms of common intellectual histories?</a><br/>by Jordan A. Comins and Loet Leydesdorff (<a href="http://arxiv.org/abs/1601.00288">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1007/s11192-016-1877-6">Detecting the historical roots of tribology research: a bibliometric analysis</a><br/>by Bakthavachalam Elango, Lutz Bornmann, and Govindaraju Kannan (<a href="http://arxiv.org/abs/1601.00141">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1007/s11192-016-2177-x">Which early works are cited most frequently in climate change research literature? A bibliometric approach based on Reference Publication Year Spectroscopy</a> <br/>by Werner Marx, Robin Haunschild, Andreas Thor, and Lutz Bornmann (<a href="http://arxiv.org/abs/1608.07960">arXiv</a>)</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1108/JKM-01-2016-0019">Tracing the historical origins of knowledge management issues through Referenced Publication Years Spectroscopy (RPYS).</a> <br/>by Ali Akbar Khasseh and Reza Mokhtarpour</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1007/s11192-016-2206-9"> Exploration into the evolution and historical roots of citation analysis by referenced publication year spectroscopy </a> <br/>by Jianhua Hou</p>
+</li>
+<li>
+<p><a href="https://www.researchgate.net/publication/320296535_Identification_of_seminal_works_that_built_the_foundation_for_functional_magnetic_resonance_imaging_studies_of_taste_and_food"> Identification of seminal works that built the foundation for functional magnetic resonance imaging studies of taste and food </a> <br/>by Andy Wai Kan Yeung</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1080/00036846.2017.1363865"> Reference Publication Year Spectroscopy (RPYS) with publications in the area of academic efficiency studies: what are the historical roots of this research topic? </a> <br/>by Mehdi Rhaiem and Lutz Bornmann</p>
+</li>
+<li>
+<p><a href="https://doi.org/10.1007/s11192-016-1859-8"> "Sleeping beauty" and her restless sleep: Charles Dotter and the birth of interventional radiology </a> <br/>by Philippe Gorry and Pascal Ragouet</p>
+</li>
+<li>
+<p><a href="https://ssrn.com/abstract=3106759"> The Historical Roots of Recent Contributions to Ecological Economics: A Note Using Reference Publication Year Spectroscopy </a> <br/>by Matthieu Ballandonne</p>
+</li>
 </ul>
 </article>
 </div>

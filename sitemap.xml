@@ -2,10 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://andreas-thor.github.io/crexplorer_handbook/</loc>
-         <lastmod>2026-03-19</lastmod>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/authors_contributors/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/guide_datasets/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/legal_notice/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/papers/</loc>
+         <lastmod>2026-03-20</lastmod>
     </url>
     <url>
          <loc>https://andreas-thor.github.io/crexplorer_handbook/run_download/</loc>
-         <lastmod>2026-03-19</lastmod>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/manual/example/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/manual/intro/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/manual/options/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/manual/references/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/manual/toc/</loc>
+         <lastmod>2026-03-20</lastmod>
+    </url>
+    <url>
+         <loc>https://andreas-thor.github.io/crexplorer_handbook/manual/user_interface/</loc>
+         <lastmod>2026-03-20</lastmod>
     </url>
 </urlset>
