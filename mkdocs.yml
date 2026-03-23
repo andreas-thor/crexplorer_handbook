@@ -11,6 +11,8 @@ nav:
     - "Example: Greenhouse Effect": manual/example.md
     - "User Interface": manual/user_interface.md
     - "Options Panel": manual/options.md
+    - "Script Language": manual/script_language.md
+    - "Practical Short Guide": manual/short_guide.md
     - "References": manual/references.md
   - "Papers": papers.md
   - "Authors & Contributors": authors_contributors.md
