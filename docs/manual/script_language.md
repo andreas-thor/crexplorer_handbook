@@ -8,61 +8,75 @@ java -cp crexplorer.jar cre.Script myscript.crs (or java -cp crexplorer.jar cre.
 
 The script language allows the application of important program functions, which are exemplified as follows:
 
-## Opening CRE file (see section 4.1.1)
+## Opening CRE file 
+
+See [Section Options-File-Open](options.md#open)
 
 ```
 openFile (file: ”folder/name/filename.cre”)
 ```
 
-## Import of WoS, Scopus or Crossref files (see section 4.1.2)
+## Import of WoS, Scopus or Crossref files
+
+
+See [Section Options-File-Import](options.md#import)
 
 ```
 importFile (
-dir: “folder/name” or
-file: “folder/name/filename” or
-files: [“folder/name/f1”, “folder/name/f2”, ...], 
-type: “WOS” or “Scopus” or “CrossRef” or “CSVPUB”,	
-RPY: [minimum year, maximum year, w/o RPY? true or false],
-PY: [minimum year, maximum year, w/o PY? true or false],
-Sampling: “Random” or “None” or “Systematic” or “Cluster”,
-offset: 3,
-MAXCR: 1000
+    dir: “folder/name” or
+    file: “folder/name/filename” or
+    files: [“folder/name/f1”, “folder/name/f2”, ...], 
+    type: “WOS” or “Scopus” or “CrossRef” or “CSVPUB”,	
+    RPY: [minimum year, maximum year, w/o RPY? true or false],
+    PY: [minimum year, maximum year, w/o PY? true or false],
+    Sampling: “Random” or “None” or “Systematic” or “Cluster”,
+    offset: 3,
+    MAXCR: 1000
 )
 ```
 
 The offset parameter is only relevant for systematic sampling. The parameter “moves” the selected CRs by a certain values. For example, if offset = 0, CR #1, #5, #9, #13, … are selected. With offset = 1, it is CR #2, #6, #10, #14, ….
 
-## Search for Crossref data (see section 4.1.2)
+## Search for Crossref data 
+
+See [Section Options-File-Import](options.md#import)
 
 ```
 importSearch (
-type: “CrossRef”,
-doi: “DOI1” or doi: [“DOI1”,“DOI2”,...] or issn: “ISSN1”,
+    type: “CrossRef”,
+    doi: “DOI1” or doi: [“DOI1”,“DOI2”,...] or issn: “ISSN1”
 )
 ```
 
 The parameters for filtering (RPY, PY) and sampling (Sampling, Offset, MaxCR) can also be used for ``importSearch``.
 
-## Save a CRE file (see section 4.1.3)
+## Save a CRE file 
+
+See [Section Options-File-Save](options.md#save)
 
 ```
 saveFile (
-file: “folder/name/filename.cre”,
+    file: “folder/name/filename.cre”,
 	RPY: [minimum year, maximum year]
 )
 ```
 
-## Export data in different file formats (see section 4.1.5)
+## Export data in different file formats 
+
+See [Section Options-File-Export](options.md#export)
 
 ```
 exportFile (
-file: “folder/name/filename”, 
-type: “WOS” or “SCOPUS” or “CSV_CR” or “CSV_PUB” or
-      “CSV_CR_PUB” or “CSV_GRAPH”
+    file: “folder/name/filename”, 
+    type: “WOS” or “SCOPUS” or “CSV_CR” or “CSV_PUB” or
+        “CSV_CR_PUB” or “CSV_GRAPH”
 )
 ```
 
-## Remove CRs by RPY or by N_CR (see section 4.2.2, 4.2.3, and 4.2.4)
+## Remove CRs by RPY or by N_CR 
+
+See Sections [Options-Edit-Remove selected Cited References w/o Year](options.md#remove-selected-cited-references-wo-year), 
+ [Options-Edit-Remove by Reference Publication Year](options.md#remove-by-reference-publication-year), and [Options-Edit-Remove by Number of Cited References](options.md#remove-by-number-of-cited-references)
 
 ``` 
 removeCR (
@@ -71,7 +85,10 @@ removeCR (
 )
 ```
 
-## Retain citing publications within PY (see section 4.2.8)
+## Retain citing publications within PY
+
+
+See [Section Options-Edit-Retain Publications within Citing Publication Year](options.md#retain-publications-within-citing-publication-year)
 
 ```
 retainPub (
@@ -80,7 +97,9 @@ retainPub (
 ```
 
 
-## Cluster equivalent CRs (see section 4.4.1)
+## Cluster equivalent CRs 
+
+See [Section Options-Disambiguation-Cluster equivalent Cited References](options.md#cluster-equivalent-cited-references)
 
 ```
 cluster (
@@ -92,14 +111,16 @@ MISSING_IS_EQUAL: true or false
 )
 ```
 
-## Merge clustered cited references (see section 4.4.2)
+## Merge clustered cited references 
+
+See [Section Options-Disambiguation-Merge clustered Cited References](options.md#merge-clustered-cited-references)
 
 ``` 
 merge ()
 ```
 
 
-### Settings
+## Settings
 
 ```
 set (

@@ -11,7 +11,7 @@ Figure 2. Screenshot of CRExplorer
 
 
 
-## 3.1 Data visualization
+## Data visualization
 
 
 The figure (see Figure 2) shows the number of CRs per RPY as **JFreeChart** or **HighCharts**. One of these chart types can be choosen by the user (see section 4.1). Furthermore, the figure visualizes the deviation of the number of CRs in each year (*Y*) from the median for the number of CRs in the X previous, the current, and the X following years (*X* can be set under Settings, see section 4.1.6). The default is the deviation from the 5-Year-Median (*Y–2; Y–1 ; Y ; Y+1; Y+2*). This deviation from the *X*-year median provides a curve smoother than the one in terms of absolute numbers. If there is no CR in a specific RPY, the number of CRs of this RPY is set to zero for the calculation of the deviation from the median. Using the X-year median deviation curve, peaks in the data can be identified more easily than with the number of CRs curve, since each year is compared with its adjacent years.
@@ -26,7 +26,7 @@ By clicking on **Number of Cited References** or **Deviation from the *X*-Year M
 Using the mouse (and pressing simultaneously the control button), one can mark an area on the graph and restrict the visualized graph to the marked area. The user can recall the initial graph (and thus dissolve any changes) by right-clicking on the graph or by clicking on the button **Reset zoom**. This can also be accomplished via the **View** menu, see section 4.3.
 
 
-## 3.2 Table view
+## Table view
 
 The table lists all CRs included in the analysis: The table initially shows the CRs as found in the WoS or another dataset. The data in the columns of the table can be sorted in ascending or descending order. It is also possible to sort by multiple columns: For example, if one wants to sort by colum X and then by column Y, click firstly on column Y and then on column X.
 
@@ -106,7 +106,7 @@ Table 1. Definition and default parameters for identifying different types of se
 **Score from Search Process (SEARCH_SCORE)**: The column contains the value 1 for CRs including the string used by the user for searching and the value 0 otherwise (see section 4.3).
 
 
-## 3.3 Working with data visualization and table view together
+## Working with data visualization and table view together
 
 
 Clicking on a data point in the graph, the CRs data in the table (on the right side of the screen) is sorted by **Reference Publication Year** and **Number of Cited References / Percent in Year**, respectively (in descending order). Furthermore, the first CR with the highest percentage in the particular year is marked. Since the data is sorted by the **Number of Cited References / Percent in Year**, respectively, one can inspect the most important CRs which are responsible for a peak.

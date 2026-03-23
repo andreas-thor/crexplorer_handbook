@@ -6,7 +6,7 @@ nav:
   - "WoS Landmark Papers": https://andreas-thor.github.io/CRExplorer/landmark.html
   - "Guide & Datasets": guide_datasets.md
   - "Manual": 
-    - "Table of Contents": manual/toc.md
+    # - "Table of Contents": manual/toc.md
     - "Introduction": manual/intro.md
     - "Example: Greenhouse Effect": manual/example.md
     - "User Interface": manual/user_interface.md
@@ -47,6 +47,21 @@ extra:
 
 
 plugins:
+  - enumerate-headings:     
+      toc_depth: 0
+      strict: true
+      increment_across_pages: true
+      include:
+        - "*"
+      exclude:
+        - index.md
+        - run_download.md
+        - guide_datasets.md
+        - papers.md
+        - authors_contributors.md
+        - legal_notice.md
+      restart_increment_after:
+        - second_section.md 
   - exporter: 
       formats:
         pdf:
