@@ -139,18 +139,6 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../toc/">
-<span class="md-ellipsis">
-    
-  
-    Table of Contents
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../intro/">
 <span class="md-ellipsis">
     
@@ -228,87 +216,86 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#opening-cre-file-see-section-411">
+<a class="md-nav__link" href="#opening-cre-file">
 <span class="md-ellipsis">
       
-        Opening CRE file (see section 4.1.1)
+        Opening CRE file
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#import-of-wos-scopus-or-crossref-files-see-section-412">
+<a class="md-nav__link" href="#import-of-wos-scopus-or-crossref-files">
 <span class="md-ellipsis">
       
-        Import of WoS, Scopus or Crossref files (see section 4.1.2)
+        Import of WoS, Scopus or Crossref files
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#search-for-crossref-data-see-section-412">
+<a class="md-nav__link" href="#search-for-crossref-data">
 <span class="md-ellipsis">
       
-        Search for Crossref data (see section 4.1.2)
+        Search for Crossref data
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#save-a-cre-file-see-section-413">
+<a class="md-nav__link" href="#save-a-cre-file">
 <span class="md-ellipsis">
       
-        Save a CRE file (see section 4.1.3)
+        Save a CRE file
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#export-data-in-different-file-formats-see-section-415">
+<a class="md-nav__link" href="#export-data-in-different-file-formats">
 <span class="md-ellipsis">
       
-        Export data in different file formats (see section 4.1.5)
+        Export data in different file formats
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#remove-crs-by-rpy-or-by-n_cr-see-section-422-423-and-424">
+<a class="md-nav__link" href="#remove-crs-by-rpy-or-by-n_cr">
 <span class="md-ellipsis">
       
-        Remove CRs by RPY or by N_CR (see section 4.2.2, 4.2.3, and 4.2.4)
+        Remove CRs by RPY or by N_CR
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#retain-citing-publications-within-py-see-section-428">
+<a class="md-nav__link" href="#retain-citing-publications-within-py">
 <span class="md-ellipsis">
       
-        Retain citing publications within PY (see section 4.2.8)
+        Retain citing publications within PY
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cluster-equivalent-crs-see-section-441">
+<a class="md-nav__link" href="#cluster-equivalent-crs">
 <span class="md-ellipsis">
       
-        Cluster equivalent CRs (see section 4.4.1)
+        Cluster equivalent CRs
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#merge-clustered-cited-references-see-section-442">
+<a class="md-nav__link" href="#merge-clustered-cited-references">
 <span class="md-ellipsis">
       
-        Merge clustered cited references (see section 4.4.2)
+        Merge clustered cited references
       
     </span>
 </a>
-<nav aria-label="Merge clustered cited references (see section 4.4.2)" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#settings">
 <span class="md-ellipsis">
@@ -317,9 +304,6 @@
       
     </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#loops">
@@ -403,60 +387,69 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="script-language">Script Language</h1>
+<h1 id="script-language"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.</span> Script Language</h1>
 <p>CRExplorer can be operated by using the menus (see section 3) or by using a tailored script language (see the explanations and examples in Haunschild et al., 2020). If a user wants to run a user-defined script name “myscript.crs”, it is necessary that the program is downloaded and started from the command line via the following command (Windows users might replace <code>java</code> by <code>javaw</code>):</p>
 <pre><code>java -cp crexplorer.jar cre.Script myscript.crs (or java -cp crexplorer.jar cre.Script –db… in the database mode)
 </code></pre>
 <p>The script language allows the application of important program functions, which are exemplified as follows:</p>
-<h2 id="opening-cre-file-see-section-411">Opening CRE file (see section 4.1.1)</h2>
+<h2 id="opening-cre-file"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.1</span> Opening CRE file</h2>
+<p>See <a href="../options/#open">Section Options-File-Open</a></p>
 <pre><code>openFile (file: ”folder/name/filename.cre”)
 </code></pre>
-<h2 id="import-of-wos-scopus-or-crossref-files-see-section-412">Import of WoS, Scopus or Crossref files (see section 4.1.2)</h2>
+<h2 id="import-of-wos-scopus-or-crossref-files"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.2</span> Import of WoS, Scopus or Crossref files</h2>
+<p>See <a href="../options/#import">Section Options-File-Import</a></p>
 <pre><code>importFile (
-dir: “folder/name” or
-file: “folder/name/filename” or
-files: [“folder/name/f1”, “folder/name/f2”, ...], 
-type: “WOS” or “Scopus” or “CrossRef” or “CSVPUB”,  
-RPY: [minimum year, maximum year, w/o RPY? true or false],
-PY: [minimum year, maximum year, w/o PY? true or false],
-Sampling: “Random” or “None” or “Systematic” or “Cluster”,
-offset: 3,
-MAXCR: 1000
+    dir: “folder/name” or
+    file: “folder/name/filename” or
+    files: [“folder/name/f1”, “folder/name/f2”, ...], 
+    type: “WOS” or “Scopus” or “CrossRef” or “CSVPUB”,  
+    RPY: [minimum year, maximum year, w/o RPY? true or false],
+    PY: [minimum year, maximum year, w/o PY? true or false],
+    Sampling: “Random” or “None” or “Systematic” or “Cluster”,
+    offset: 3,
+    MAXCR: 1000
 )
 </code></pre>
 <p>The offset parameter is only relevant for systematic sampling. The parameter “moves” the selected CRs by a certain values. For example, if offset = 0, CR #1, #5, #9, #13, … are selected. With offset = 1, it is CR #2, #6, #10, #14, ….</p>
-<h2 id="search-for-crossref-data-see-section-412">Search for Crossref data (see section 4.1.2)</h2>
+<h2 id="search-for-crossref-data"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.3</span> Search for Crossref data</h2>
+<p>See <a href="../options/#import">Section Options-File-Import</a></p>
 <pre><code>importSearch (
-type: “CrossRef”,
-doi: “DOI1” or doi: [“DOI1”,“DOI2”,...] or issn: “ISSN1”,
+    type: “CrossRef”,
+    doi: “DOI1” or doi: [“DOI1”,“DOI2”,...] or issn: “ISSN1”
 )
 </code></pre>
 <p>The parameters for filtering (RPY, PY) and sampling (Sampling, Offset, MaxCR) can also be used for <code>importSearch</code>.</p>
-<h2 id="save-a-cre-file-see-section-413">Save a CRE file (see section 4.1.3)</h2>
+<h2 id="save-a-cre-file"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.4</span> Save a CRE file</h2>
+<p>See <a href="../options/#save">Section Options-File-Save</a></p>
 <pre><code>saveFile (
-file: “folder/name/filename.cre”,
+    file: “folder/name/filename.cre”,
     RPY: [minimum year, maximum year]
 )
 </code></pre>
-<h2 id="export-data-in-different-file-formats-see-section-415">Export data in different file formats (see section 4.1.5)</h2>
+<h2 id="export-data-in-different-file-formats"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.5</span> Export data in different file formats</h2>
+<p>See <a href="../options/#export">Section Options-File-Export</a></p>
 <pre><code>exportFile (
-file: “folder/name/filename”, 
-type: “WOS” or “SCOPUS” or “CSV_CR” or “CSV_PUB” or
-      “CSV_CR_PUB” or “CSV_GRAPH”
+    file: “folder/name/filename”, 
+    type: “WOS” or “SCOPUS” or “CSV_CR” or “CSV_PUB” or
+        “CSV_CR_PUB” or “CSV_GRAPH”
 )
 </code></pre>
-<h2 id="remove-crs-by-rpy-or-by-n_cr-see-section-422-423-and-424">Remove CRs by RPY or by N_CR (see section 4.2.2, 4.2.3, and 4.2.4)</h2>
+<h2 id="remove-crs-by-rpy-or-by-n_cr"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.6</span> Remove CRs by RPY or by N_CR</h2>
+<p>See Sections <a href="../options/#remove-selected-cited-references-wo-year">Options-Edit-Remove selected Cited References w/o Year</a>, 
+ <a href="../options/#remove-by-reference-publication-year">Options-Edit-Remove by Reference Publication Year</a>, and <a href="../options/#remove-by-number-of-cited-references">Options-Edit-Remove by Number of Cited References</a></p>
 <pre><code>removeCR (
     N_CR: [minimum value, maximum value],
     RPY: [minimum value, maximum value]
 )
 </code></pre>
-<h2 id="retain-citing-publications-within-py-see-section-428">Retain citing publications within PY (see section 4.2.8)</h2>
+<h2 id="retain-citing-publications-within-py"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.7</span> Retain citing publications within PY</h2>
+<p>See <a href="../options/#retain-publications-within-citing-publication-year">Section Options-Edit-Retain Publications within Citing Publication Year</a></p>
 <pre><code>retainPub (
     PY: [minimum value, maximum value]
 )
 </code></pre>
-<h2 id="cluster-equivalent-crs-see-section-441">Cluster equivalent CRs (see section 4.4.1)</h2>
+<h2 id="cluster-equivalent-crs"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.8</span> Cluster equivalent CRs</h2>
+<p>See <a href="../options/#cluster-equivalent-cited-references">Section Options-Disambiguation-Cluster equivalent Cited References</a></p>
 <pre><code>cluster (
 threshold: [value between 0.5 and 1],
 volume: true or false,
@@ -465,15 +458,16 @@ DOI: true or false,
 MISSING_IS_EQUAL: true or false
 )
 </code></pre>
-<h2 id="merge-clustered-cited-references-see-section-442">Merge clustered cited references (see section 4.4.2)</h2>
+<h2 id="merge-clustered-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.9</span> Merge clustered cited references</h2>
+<p>See <a href="../options/#merge-clustered-cited-references">Section Options-Disambiguation-Merge clustered Cited References</a></p>
 <pre><code>merge ()
 </code></pre>
-<h3 id="settings">Settings</h3>
+<h2 id="settings"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.10</span> Settings</h2>
 <pre><code>set (
   n_pct_range: 1, 
   median_range: 2)
 </code></pre>
-<h2 id="loops">Loops</h2>
+<h2 id="loops"><span class="enumerate-headings-plugin enumerate-heading-plugin">5.11</span> Loops</h2>
 <p>Users can expand the capabilities of CRExplorer by writing extensions (Haunschild et al., 2020). One CRExplorer extension is available at <a href="">https://github.com/andreas-thor/cre/blob/master/crs/packages/Loop.crs</a>. This extension simplifies loop programming in the CRExplorer script language by introducing the forEach und forEachUnion operators. The number of cycles is provided as the value of count or as range (from, to). The functions differ in their behavior after each loop cycle: forEach performs no further action whereas forEachUnion merges the CR data of each cycle to a final CR dataset.</p>
 <pre><code>forEach (
   count: 10 or 

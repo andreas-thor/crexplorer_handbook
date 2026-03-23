@@ -139,18 +139,6 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../toc/">
-<span class="md-ellipsis">
-    
-  
-    Table of Contents
-  
-
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../intro/">
 <span class="md-ellipsis">
     
@@ -520,6 +508,15 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#merge-clustered-cited-references">
+<span class="md-ellipsis">
+      
+        Merge clustered Cited References
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -639,11 +636,11 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="options-panel">Options panel</h1>
-<h2 id="file">File</h2>
-<h3 id="open">Open</h3>
+<h1 id="options-panel"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.</span> Options panel</h1>
+<h2 id="file"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1</span> File</h2>
+<h3 id="open"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.1</span> Open</h3>
 <p>The program uses an internal file format “<em>.cre”, which can be used as a “working format” and for the exchange of working files. The file contains all data including changes by the user. Using Microsoft Windows, one can double click on any </em>.cre file and thus run CRExplorer automatically. Note that the available memory on the computer decreases the more datasets have been opened and without terminating CRExplorer inbetween. Thus, memory is not freed when a new dataset is loaded.</p>
-<h3 id="import">Import</h3>
+<h3 id="import"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.2</span> Import</h3>
 <p><strong>Web of Science</strong>: CRExplorer opens one or several datasets from WoS. The datasets are downloaded using the option <strong>Save to Other File Formats</strong>. As <strong>Record Content</strong> select <strong>Full Record and Cited References</strong> and as File Format select <strong>Other Reference Software</strong>. The records have to be searched in the WoS Core Collection in order to be able to save full records including the CRs.</p>
 <p><strong>Scopus</strong>: CRExplorer opens one or several datasets from Scopus. The file format <strong>CSV</strong> (including citations, abstracts, and references) are chosen for downloading records.</p>
 <p>Before loading the WoS or Scopus data into CRExplorer, the program analyses the file(s) which the user would like to import. When the analyses are finished, some basic information on the full dataset (we would like to call it “population”) are presented to the user in a window (in fields with grey background): number of non-distinct CRs, minimum/maximum RPY, number of (citing) publications, minimum/maximum publication year (of the citing publication), number of CRs without RPYs, and number of (citing) publications without publication year.</p>
@@ -666,11 +663,11 @@
 <p>The analysis of a sample instead of the population is only an opportunity to handle the restrictions, which are given by the computer of the user. It is always the best way in the cited references analysis to analyse the population (by running CRExplorer with the database option). If the user, however, has to work with a sample instead of the population, inference statistics can be applied to draw conclusions from the sample to the population. For using inference statistics, the user can download the sample data as csv-file from CRExplorer (see section 4.1.5). Using statistics programs, such as Stata (see <a href="">www.stata.com</a>) or R (see <a href="">www.r-project.org</a>), the user can apply inference statics to the exported (random) sample (Cumming, 2012). In the SSC Archive, the user finds the Stata command “plotrpys” which produces monocrome and colored graphs including 95% confidence intervals. These graphs can be used in connection with sampe data (see section 4.1.5).</p>
 <p>The number of CRs which are shown to the user in the info window after the analyses of the WoS files (or files from another source) refers to non-distinctive counting. Thus, CRs have been multiply counted, if CRs existed multiply in the dataset. In most of the cases, the user will observe a reduced number of CRs after importing the population or sample. The reason is that the CRs are distinctly counted after importing.</p>
 <p>Note that the available memory on the computer decreases the more datasets have been imported without terminating CRExplorer inbetween. Thus, memory is not freed when a new dataset is imported.</p>
-<h3 id="save">Save</h3>
+<h3 id="save"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.3</span> Save</h3>
 <p>The program saves the dataset in the internal file format “*.cre”.</p>
-<h3 id="save-as">Save as</h3>
+<h3 id="save-as"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.4</span> Save as</h3>
 <p>The program saves the dataset in the internal file format “*.cre” and asks for a file name.</p>
-<h3 id="export">Export</h3>
+<h3 id="export"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.5</span> Export</h3>
 <p><strong>Web of Science</strong>: The dataset is exported in the WoS format as specified in the import section.</p>
 <p><strong>Scopus</strong>: The dataset is exported in the Scopus format as specified in the import section.</p>
 <p>Note that the export can only contain data from the import, when one transfers from Scopus to WoS. WoS files, for example, only consider the first authors while Scopus files include all authors in the CR field. If one transfers from WoS to Scopus, not all information can be provided, since this information is not available in downloads from WoS.</p>
@@ -678,77 +675,79 @@
 <p><strong>CSV (Cited References)</strong>: A table with CRs data is saved as a csv-file.</p>
 <p><strong>CSV (Citing publications)</strong>: A table with data on the citing publications is saved as a csv-file.</p>
 <p><strong>CSV (Cited References + Citing publications)</strong>: A table with both CRs data and data on the citing publications is saved as a csv-file.</p>
-<h3 id="settings">Settings</h3>
-<h4 id="table">Table</h4>
+<h3 id="settings"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.6</span> Settings</h3>
+<h4 id="table"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.6.1</span> Table</h4>
 <p>In the sections <strong>Cited References</strong>, <strong>Indicators</strong>, <strong>Clustering</strong>, and <strong>Searching</strong> the columns can be selected which should be displayed in the table. It is also possible to select/deselect all columns. These functions enable to restrict the columns to those which are needed for a specific analysis. In the section <strong>Value Settings</strong>, the <strong>Number of Digits</strong> for all numerical columns can be modified.</p>
 <p>Furthermore, the <strong>N_PCT Range</strong> can be adjusted. It might be a problem in computing <strong>N_TOP50</strong>, <strong>N_TOP25</strong>, and <strong>N_TOP10</strong> that the citation counts in a citing year are inflated by zeros (and/or similar values). Thus, we included the option in the program to extend the number of citing years which are considered in calculating <strong>N_TOP50</strong>, <strong>N_TOP25</strong>, and <strong>N_TOP10</strong>. If only the citing year itself should be considered in the analysis, the <strong>NPCT Range</strong> is set to 0. If it is set to 1, the thresholds for the top 50%, 25%, and 10% are computed on the base of the citations from the preceding (<em>t</em>-1) and succeeding (<em>t</em>+1) citing years. This doubles the underlying dataset in the first and last citing year (since year <em>t</em>-1 or <em>t</em>+1, respectively, do not exist) and triples it in all other years.</p>
-<h4 id="chart">Chart</h4>
+<h4 id="chart"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.6.2</span> Chart</h4>
 <p><strong>Chart Layout</strong>: The user can select the lines which should be displayed: Number of Cited References, Deviation from the Median or both. The deviation of the number of CRs in each year Y from the median for the number of CRs in the previous, the current, and the following years can be set. The default is 2: <em>Y</em>–2 ; <em>Y</em>–1 ; <em>Y</em> ; <em>Y</em>+1 ; <em>Y</em>+2. Thus, the user can change the number to any other number and can thus work with medians calculated based on different time windows. Furthermore, Stroke Size and Shape size for the lines in the chart as well as Label Font Size and Tick Font Size for the axes can be set.</p>
 <p><strong>Chart Engines</strong>: Two different chart types (<strong>JFreeChart</strong> and <strong>HighCharts</strong>) can be selected. Both types have the same functionality: The user can zoom into the graph and click on a peak whereby the underlying CRs are sorted and marked correspondingly in the table. However, both types are different in look and feel. <strong>JFreeChart</strong> is a static visualization, similar to graph types in Excel or GnuPlot; <strong>HighCharts</strong> is a dynamic, web-based (“modern”) visualization. The underlying data of any graph can be downloaded with <strong>File</strong> – <strong>Export</strong> – <strong>Graph CSV</strong> and can be visualized in another software (e.g., Excel, R, or GnuPlot).</p>
 <p>The <strong>JFreeChart</strong> can be saved in various formats by right-clicking on the graph. This is not possible with <strong>HighCharts</strong>. If the user wants to include the graph from <strong>HighCharts</strong> into another program (e.g., Microsoft Word), he or she should use programs such as the Snipping Tool (which is available in Microsoft Windows) or KSnapshot (which is available in KDE) to cut the graph.
 If there are any problems with changing of chart types, try <strong>View</strong> – <strong>Reset Chart</strong> (see section 4.3.9) or restart CRExplorer.</p>
-<h3 id="exit">Exit</h3>
+<h3 id="exit"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1.7</span> Exit</h3>
 <p>Leave CRExplorer.</p>
-<h2 id="edit">Edit</h2>
+<h2 id="edit"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2</span> Edit</h2>
 <p>The user may often wish to restrict the CR analysis to a certain time period. Very early and most recent years are frequently not very helpful for the identification of the most frequently cited publications in the history. Although CRExplorer allows for the selection of periods in the graph, this selection does not lead to changes in the dataset. However, there are several ways of removing data from a dataset.</p>
-<h3 id="remove-selected-cited-references">Remove selected Cited References</h3>
+<h3 id="remove-selected-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.1</span> Remove selected Cited References</h3>
 <p>Rows in the table can be marked and deleted using the menu item.</p>
-<h3 id="remove-selected-cited-references-wo-year">Remove selected Cited References w/o Year</h3>
+<h3 id="remove-selected-cited-references-wo-year"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.2</span> Remove selected Cited References w/o Year</h3>
 <p>All CRs are removed without a year in the column RPY.</p>
-<h3 id="remove-by-reference-publication-year">Remove by Reference Publication Year.</h3>
+<h3 id="remove-by-reference-publication-year"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.3</span> Remove by Reference Publication Year.</h3>
 <p>The user can remove the data for specific RPYs.</p>
-<h3 id="remove-by-number-of-cited-references">Remove by Number of Cited References</h3>
+<h3 id="remove-by-number-of-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.4</span> Remove by Number of Cited References</h3>
 <p>All CRs with a number of reference counts (column <strong>N_CR</strong>) within the specified range are deleted. This kind of restriction is helpful in identifying publications from early RPYs with a substantial impact (and to suppress the noise of less cited publications). Furthermore, in RPYs with many sparsely cited publications the publications with substantial impact can be easier identified then.</p>
-<h3 id="remove-by-percent-in-year">Remove by Percent in Year</h3>
+<h3 id="remove-by-percent-in-year"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.5</span> Remove by Percent in Year</h3>
 <p>CRs can be removed by using thresholds for the column PERC_YR. Thus, it is possible to remove lowly CRs whereby “lowly” is defined in terms of the citation distribution in the RPYs.</p>
-<h3 id="retain-cited-references-by-id">Retain Cited References by ID</h3>
+<h3 id="retain-cited-references-by-id"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.6</span> Retain Cited References by ID</h3>
 <p>One can select the citation environment of a specific CR (or of two or even more CRs) in the form of all co-cited CRs and analyse these CRs (e.g., for applying RPYS-CO, see Marx, Haunschild, Thor, &amp; Bornmann, 2017). The specific CRs can be prominent and seminal works which are used as a kind of marker or tracer references for a specific topic in a field. We assume that papers which cite the selected CRs are potential candidates for citing also many other CRs relevant in a specific historical context. This method takes advantage of the fact that concurrently cited (co-cited) papers are more or less closely related to each other (Small, 1977).</p>
 <p>By selecting <strong>Retain Cited References by ID</strong>, the CRs are restricted based on the IDs specified by the user (e.g., 20, 25, 40). Thus, only CRs are retained which are co-cited with the IDs (CRs) specified.</p>
-<h3 id="retain-publications-citing-selected-cited-references">Retain Publications citing Selected Cited References</h3>
+<h3 id="retain-publications-citing-selected-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.7</span> Retain Publications citing Selected Cited References</h3>
 <p>The CRs are restricted based on the CRs marked by the user in the table. Thus, only CRs are retained which are co-cited with the CRs specified.</p>
-<h3 id="retain-publications-within-citing-publication-year">Retain Publications within Citing Publication Year</h3>
+<h3 id="retain-publications-within-citing-publication-year"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.8</span> Retain Publications within Citing Publication Year</h3>
 <p>The CRs are restricted based on the publication years of the citing publications. The user can specify the range of (citing) publication years. Thus, only CRs are retained which are cited or co-cited with the CRs in citing publications from the specified years.</p>
-<h3 id="copy-selected-cited-references">Copy Selected Cited References</h3>
+<h3 id="copy-selected-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2.9</span> Copy Selected Cited References</h3>
 <p>The CR (CRs) which is (are) selected in the table is (are) copied to the clipboard for use in other programs (e.g., spreadsheet or word processing programs).</p>
-<h2 id="view">View</h2>
-<h3 id="info">Info</h3>
+<h2 id="view"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3</span> View</h2>
+<h3 id="info"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.1</span> Info</h3>
 <p>The message box provides some basic information on the dataset: <strong>Number of Cited References</strong> and <strong>Number of Cited References (shown)</strong>. The user has the option to select data temporarily. Thus, the complete number of CRs and the temporarily selected number are shown. Furthermore, the user can cluster and merge CR variants, and the number of calculated clusters is shown. The message box also contains the <strong>Range of Cited References Years</strong>, the <strong>Number of different Cited References Years</strong>, the <strong>Number of Publications</strong> (including publications without CRs), the <strong>Number of Citing Publications</strong> (excluding publications without CRs), the <strong>Range of Citing Publication Years</strong>, and the <strong>Number of different Citing Publication Years</strong>.</p>
-<h3 id="cited-reference-details">Cited Reference (Details)</h3>
+<h3 id="cited-reference-details"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.2</span> Cited Reference (Details)</h3>
 <p>An info box including all information from the columns appears for a selected CR.</p>
-<h3 id="citing-publications">Citing Publications</h3>
+<h3 id="citing-publications"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.3</span> Citing Publications</h3>
 <p>The publications are shown which cite the CR (CRs) selected by the user.</p>
-<h3 id="show-cited-references-wo-years">Show Cited References w/o Years</h3>
+<h3 id="show-cited-references-wo-years"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.4</span> Show Cited References w/o Years</h3>
 <p>Scopus or WoS data sets contain CRs without RPY. As a rule, these CRs are not considered in the analyses of CRExplorer, but can be shown optionally in the table.</p>
-<h3 id="filter-by-reference-publication-year">Filter by Reference Publication Year</h3>
+<h3 id="filter-by-reference-publication-year"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.5</span> Filter by Reference Publication Year</h3>
 <p>The graph is temporarily restricted to the minimum and maximum years included.</p>
-<h3 id="show-cited-references-of-selected-clusters-only">Show Cited References of selected cluster(s) only</h3>
+<h3 id="show-cited-references-of-selected-clusters-only"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.6</span> Show Cited References of selected cluster(s) only</h3>
 <p>Restrict the CRs to only those which are in the same cluster(s) as the selected CR(s).</p>
-<h3 id="search-cited-references">Search Cited References</h3>
+<h3 id="search-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.7</span> Search Cited References</h3>
 <p>CRs including the search string are sorted to the first positions in the tabular list of CRs. The column Search_Score in the table contains the value 1 for CRs including the search string and the value 0 otherwise. The column Search_Score itself can be used for sorting the data.</p>
-<h3 id="show-all-cited-references-currently-x-of-y">Show all Cited References (currently X of Y)</h3>
+<h3 id="show-all-cited-references-currently-x-of-y"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.8</span> Show all Cited References (currently X of Y)</h3>
 <p>All filters set by the user for filtering CRs are deactivated. If X in the menue item is smaller than Y, a filter is active.</p>
-<h3 id="reset-chart">Reset Chart</h3>
+<h3 id="reset-chart"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.9</span> Reset Chart</h3>
 <p>The <strong>JFreeChart</strong> or <strong>HighCharts</strong> axes are reset to their maximum range.</p>
-<h2 id="disambiguation">Disambiguation</h2>
+<h2 id="disambiguation"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.4</span> Disambiguation</h2>
 <p>The user has the possibility to detect variants of the same CR, cluster them, and merge their occurrences (number of CRs). The automatic clustering of variants is restricted to variants within the same publication year, but not across publication years. Thus, a reference to a first edition of a book and a reference to a later edition are not clustered by this routine. However, the user can make further adjustments to the author names, the journal or book title and other bibliographic information of CRs (across publication years). The clustering uses the table with the list of CRs as input file. Since the clustering (and merging) is a complex process which needs a lot of computer resources, the user is adviced to cluster only those data which is of interest.</p>
 <p>The clustering and merging of the data is especially important for the Scopus data, since the CR data in Scopus is more heterogeneous than in WoS. Scopus data contains more information than WoS data (all authors and the titles of the referenced publication) which increases the probability of variants of the same CR. Furthermore, Scopus data may contain fragmented CR data which cannot be completely parsed into the bibliographic categories of CRExplorer (e.g., authors, titles, or volume numbers). The heterogeneous data of Scopus can be inspected best by sorting the list of CRs under the column <strong>Authors</strong>. A possible way of dealing with the heterogeneous CRs is to try their clustering and merging with complete CRs (if fragmented CRs are variants of complete CRs).</p>
-<h3 id="cluster-equivalent-cited-references">Cluster equivalent Cited References</h3>
+<h3 id="cluster-equivalent-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.4.1</span> Cluster equivalent Cited References</h3>
 <p>In the first step of eliminating variants of CRs, the variants of the same cited publication are identified. Two attributes are used for a first similarity computation: <strong>Last name</strong> of the first author and <strong>Source title</strong>. Based on this data, CRExplorer determines the pair-wise similarity of variants of CRs. The program computes the Levenshtein similarity (as provided by the <a href="https://github.com/Simmetrics/simmetrics">SimMetrics library</a>) of both attributes (see also Wasi &amp; Flaaen, 2015). The Levenshtein similarity of two strings <em>s</em>1 and <em>s</em>2 is defined as sim(<em>s</em>1, <em>s</em>2) = 1 - LD(<em>s</em>1, <em>s</em>2)/max(|<em>s</em>1|, |<em>s</em>2|). Here |<em>s</em>| denotes the length of a string s and LD (<em>s</em>1, <em>s</em>2) is the Levenshtein distance which is defined as follows: The Levenshtein distance between two strings <em>s</em>1 and <em>s</em>2 is the minimal number of single-character edit operations (i.e., insertion, deletion, or substitution) required to transform string <em>s</em>1 into <em>s</em>2. The Levenshtein distance is 0 for equal strings (no edit operations necessary) and equals max(|<em>s</em>1|, |<em>s</em>2|) for totally different strings (substitute the first min(|<em>s</em>1|, |<em>s</em>2|) characters and insert / delete the remaining characters). Therefore, for any two strings the Levenshtein similarity is between 0 to 1 where 0 corresponds to “totally different” and 1 to “identical”.</p>
 <p>For two CRs <em>o</em>1 and <em>o</em>2, CRExplorer computes the Levenshtein similarity of the first authors’ last names as well as the similarity of the source titles. The two CRs <em>o</em>1 and <em>o</em>2 are considered as “matching” if the weighted average (ratio 2:1) of the two similarity values is equal to or greater than the threshold of 0.75 (this can be changed by the user, see below). The combination of multiple similarity values that are based on different attributes typically achieves a better match quality compared to a single similarity of the entire CR strings. First, it restricts the similarity computation to relevant (and available) attribute values. Second, the combination allows for an appropriate weighting of attributes independent from their actual string length. </p>
-<p>CRExplorer performs a clustering based on the matching results, i.e., the list of the matching CR pairs. Two CRs o1 and o2 are assigned the same cluster, if the pair (o1, o2) appears in the matching result or if there is a list of other CRs t1, ..., tn so that (o1,t1), (t1,t2), (t2,t3), ..., (tn-1,tn), and (tn, o2) are all among the matching pairs. Each cluster is uniquely identified by its ClusterID, i.e., all CRs of a cluster are marked with a corresponding ClusterID. The results of the similarity computation can be inspected using the column ClusterID in the table. The number of CRs in each cluster is provided by the column labeled ClusterSize.
-4.4.2   Merge clustered Cited References
-In the second step of eliminating variants of CRs (subsequent to the clustering of variants), the ClusterID is used for the aggregation of the variants, i.e., the values of the corresponding lines in the table are summed up per cluster.
-The clustering and merging procedure can be helpful in aggregating variants of the same CR. However, this procedure itself is prone to error. For example, if there are several CRs from the same authors and published in the same journal in one year, these CRs are clustered, although they refer to different publications. This aggregation error affects mainly journal papers. Books may be also prone to error in the clustering and merging procedure. The Source title of the same book may contain different page numbers (included by the citing authors), the same book may be available and cited in different languages, and the book titles may be differently abbreviated by the data providers.
-For this reason, we strongly recommend that a user of the procedure controls the results from the clustering procedure and corrects wrong matches (especially for cited books). For the manual correction we have implemented some features in the program which support the user in post-processing the clustered results. Corresponding control buttons appear above the table, when the user starts the clustering process. The features can be used separately or in combination to change the cluster results before the merging of the CR variants is started. The effects of the features can be inspected by the values in ClusterID which has two components: The first value in the column (before the slash) shows the cluster numbers which result from the initial clustering process which was done automatically. The second value (after the slash) marks sub-clusters which change after using the features. Thus, the user should inspect the second value of the ClusterID to assess the results of the chosen post-processing.
-The features implemented in the program are the following:
-Slide control: For matching similar CRs, Levenshtein is initially used as similarity function with a threshold of 0.75. However, the user can change this afterwards by using the slide control which accepts values between 0.5 (shown as 50) and 1 (shown as 100). If the slider is moved in the direction of 50, less similar CRs are matched; by moving the slider in the direction of 100, the matching process becomes increasingly restricted.
-Volume, Page, and DOI: The user can select Volume, Page, and DOI in order to differentiate the clusters further. These selections affect the whole dataset and not only CRs which are marked by the user. Note that the Levenshtein approach is not applied to Volume, Page, and DOI; a precise match is required for these attributes.
-MISSING_IS_EQUAL option: If unchecked (false) the previous behavior is restored: CRs with missing values for metadata (Volume, Page, or DOI) that are checked are considered to be different. If checked (true), CRs with missing values for metadata (Volume, Page, or DOI) that are checked are considered to be the same. The use of this option should result in better clustering of books and conference papers. However, some CRs (e.g., arXiv papers or other preprints) might be clustered too generously if no title is present in the CR.
-Manual generation of sub-clusters: The tool offers three different ways for the manual changing of sub-clusters. They are named as Same, Different, Extract, and Undo. Most of the problems with the automated clustering procedure occur with false positives: The algorithm matches CRs, although they should be kept separate. For the manual separation of clusters, the user can apply Different or Extract. Different assigns different sub-cluster IDs to those CRs which are marked by the user manually (using the mouse click). Extract puts the marked CRs in a separated sub-cluster. Same gives marked CRs the same sub-cluster-ID. Manual changes based on Same, Different, and Extract can be rolled back using the Undo button.</p>
-<h2 id="help">Help</h2>
-<h3 id="online-manual">Online Manual</h3>
+<p>CRExplorer performs a clustering based on the matching results, i.e., the list of the matching CR pairs. Two CRs o1 and o2 are assigned the same cluster, if the pair (o1, o2) appears in the matching result or if there is a list of other CRs t1, ..., tn so that (o1,t1), (t1,t2), (t2,t3), ..., (tn-1,tn), and (tn, o2) are all among the matching pairs. Each cluster is uniquely identified by its ClusterID, i.e., all CRs of a cluster are marked with a corresponding ClusterID. The results of the similarity computation can be inspected using the column ClusterID in the table. The number of CRs in each cluster is provided by the column labeled ClusterSize.</p>
+<h3 id="merge-clustered-cited-references"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.4.2</span> Merge clustered Cited References</h3>
+<p>In the second step of eliminating variants of CRs (subsequent to the clustering of variants), the ClusterID is used for the aggregation of the variants, i.e., the values of the corresponding lines in the table are summed up per cluster.</p>
+<p>The clustering and merging procedure can be helpful in aggregating variants of the same CR. However, this procedure itself is prone to error. For example, if there are several CRs from the same authors and published in the same journal in one year, these CRs are clustered, although they refer to different publications. This aggregation error affects mainly journal papers. Books may be also prone to error in the clustering and merging procedure. The Source title of the same book may contain different page numbers (included by the citing authors), the same book may be available and cited in different languages, and the book titles may be differently abbreviated by the data providers.</p>
+<p>For this reason, we strongly recommend that a user of the procedure controls the results from the clustering procedure and corrects wrong matches (especially for cited books). For the manual correction we have implemented some features in the program which support the user in post-processing the clustered results. Corresponding control buttons appear above the table, when the user starts the clustering process. The features can be used separately or in combination to change the cluster results before the merging of the CR variants is started. The effects of the features can be inspected by the values in ClusterID which has two components: The first value in the column (before the slash) shows the cluster numbers which result from the initial clustering process which was done automatically. The second value (after the slash) marks sub-clusters which change after using the features. Thus, the user should inspect the second value of the ClusterID to assess the results of the chosen post-processing.</p>
+<p>The features implemented in the program are the following:</p>
+<ul>
+<li><strong>Slide control</strong>: For matching similar CRs, Levenshtein is initially used as similarity function with a threshold of 0.75. However, the user can change this afterwards by using the slide control which accepts values between 0.5 (shown as 50) and 1 (shown as 100). If the slider is moved in the direction of 50, less similar CRs are matched; by moving the slider in the direction of 100, the matching process becomes increasingly restricted.</li>
+<li><strong>Volume, Page, and DOI</strong>: The user can select Volume, Page, and DOI in order to differentiate the clusters further. These selections affect the whole dataset and not only CRs which are marked by the user. Note that the Levenshtein approach is not applied to Volume, Page, and DOI; a precise match is required for these attributes.</li>
+<li><strong>MISSING_IS_EQUAL option</strong>: If unchecked (false) the previous behavior is restored: CRs with missing values for metadata (Volume, Page, or DOI) that are checked are considered to be different. If checked (true), CRs with missing values for metadata (Volume, Page, or DOI) that are checked are considered to be the same. The use of this option should result in better clustering of books and conference papers. However, some CRs (e.g., arXiv papers or other preprints) might be clustered too generously if no title is present in the CR.</li>
+<li><strong>Manual generation of sub-clusters</strong>: The tool offers three different ways for the manual changing of sub-clusters. They are named as Same, Different, Extract, and Undo. Most of the problems with the automated clustering procedure occur with false positives: The algorithm matches CRs, although they should be kept separate. For the manual separation of clusters, the user can apply Different or Extract. Different assigns different sub-cluster IDs to those CRs which are marked by the user manually (using the mouse click). Extract puts the marked CRs in a separated sub-cluster. Same gives marked CRs the same sub-cluster-ID. Manual changes based on Same, Different, and Extract can be rolled back using the Undo button.</li>
+</ul>
+<h2 id="help"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5</span> Help</h2>
+<h3 id="online-manual"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5.1</span> Online Manual</h3>
 <p>The manual of CRExplorer is opened.</p>
-<h3 id="info_1">Info</h3>
+<h3 id="info_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5.2</span> Info</h3>
 <p>Some information is given by the program.</p>
 </article>
 </div>
