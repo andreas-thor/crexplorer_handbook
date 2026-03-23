@@ -25,7 +25,9 @@ jobs:
             mkdocs-exporter \
             mkdocs-minify-plugin \
             mkdocs-git-revision-date-localized-plugin \
-            pymdown-extensions
+            pymdown-extensions \
+            mkdocs-enumerate-headings-plugin 
+
 
       - name: Playwright
         run: playwright install
