@@ -7,6 +7,7 @@ pdf: false
 
 CRExplorer is packaged as a Java Archive (JAR) and requires a system with Java 17 (or higher) support.
 
+[Download Version 2.0](https://github.com/andreas-thor/CRExplorer/releases/download/v2.0/crexplorer.jar){ .md-button .md-button--primary }
 
 On most systems a double click on the runnable JAR file will start CRExplorer. If you want to run the JAR file from command line please refer to the official Java documentation on [Running JAR-Packaged Software](https://docs.oracle.com/javase/tutorial/deployment/jar/run.html). Here you can also set the heap space size if you are processing large files.
 
@@ -17,6 +18,9 @@ java -cp crexplorer.jar cre.Script myscript.crs
 ```
 
 where ``myscript.crs`` should be replaced by the user's script filename.
+
+
+
 
 ## Releases
 

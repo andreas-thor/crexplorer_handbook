@@ -32,8 +32,12 @@ theme:
 
 markdown_extensions:
   - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
 
-
+  
 extra:
   social:
     - icon: fontawesome/brands/github
